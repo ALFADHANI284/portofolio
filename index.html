@@ -1,0 +1,32 @@
+<!DOCTYPE html> <!--untuk Memberitahu browser bahwa ini adalah dokumen HTML versi terbaru -->
+<html lang="en"><!-- Membuka dokumen HTML dan memberi tahu browser bahwa bahasa yang digunakan adalah bahasa Inggris (en = English) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title><!--Untuk Judul Pada Web Browser-->
+    <link rel="stylesheet" type="text/css" href="style.css"><!--Untuk Menghubungkan File CSS dengan HTML ( nama file CSS harus sama dengan yang di ketik di kanan href )-->
+</head>
+<body>
+    <header>
+        <nav class="navbar"><!--Untuk membuat navbar dan  class untuk memudahkan saat mengatur css-->
+            <h6 class="email">alfadhanifahrezan@gmail.com</h6><!--untuk menampilakn teks dengan ukuran kecil berisi alamat email-->
+            <div class="sosial-media">
+                <a href="" target="_blank"></i> Linkedin</a><!-- untuk membuat tautan / link ke halaman linkedin, target blank untuk membuka tab baru -->
+                <a href="https://www.instagram.com/dhani_alfa284/" target="_blank"> Instagram</a><!-- untuk membuat tautan / link ke halaman Instagram , target blank untuk membuka tab baru -->
+                <a href="https://github.com/alfaDHANI284" target="_blank"> Github</a><!-- untuk membuat tautan / link ke halaman Github, target blank untuk membuka tab baru -->
+            </div>
+        </nav>
+    </header>
+
+    <hr><!--Untuk Menampilkan garis horizontal-->
+
+    <section class="hero">
+        <img src="alfa-02.png" alt="foto alfa ganteng" class="avatar"><!--Untuk menampilakan gambar, dan class untuk memudahkan saat mengatur CSS-->
+        <p>Hai, Nama Saya Alfa Dhani Fahrezan</p><!--Untuk memunculkan paragraf (Hai, Nama Saya Alfa Dhani Fahrezan)-->
+        <h1 class="heading">I'm a Student</h1><!--Menampilkan teks besar dengan teks "I'm a Student" dan class “heading” untuk memudahkahkan saat mengatur css-->
+        <a href="alfa cv.pdf" download="alfa cv.pdf" class="download-button" onclick="return confirmDownload()">Download CV</a><!--Untuk membuat tombol yang berfungsi untuk mendownload CV Alfa -->
+    </section>
+
+    <script src="script.js"></script><!--Untuk menghubungkan file JS dengan HTML (nama file js harus sama dengan yang di ketik di kanan src )-->
+</body>
+</html>

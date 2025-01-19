@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');/*code dari google fonts */
+body{
+    font-family: "Playwrite AU SA", serif;/* font yang digunakan */
+    font-optical-sizing: auto;/*Untuk mengatur tampilan teks agar optimal dilihat dalam berbagai ukuran*/
+    font-style: normal;/* Untuk mengatur teks agar normal (tidak miring atau lainnya)*/
+     background-color: #a1d6e2;/*Untuk mengatur warna latar belakang website */
+    color: rgb(0, 0, 0);/*Untuk mengatur warna teks */
+}
+
+.navbar{
+    display: flex;/* Untuk menampilkan content navbar secara fleksibel*/
+    justify-content: space-between;/*Untuk Memberikan jarak di antara elemen-elemen navbar sehingga tersebar rata (kanan-kiri)*/
+    align-items: center;/*meratakan tulisan ke tengah*/
+    margin: 1rem 3rem;/* 1rem = 16px */
+}
+
+.email{
+    font-size: 15px;/*Untuk mengatur ukuran teks email*/
+    font-weight: 400;/*Untuk mengatur ketebalan teks email*/
+}
+
+.sosial-media{
+    display: flex;/* Untuk menampilkan content sosial-media secara fleksibel*/
+    align-items: center;
+    gap: 10px;/*untuk menambahkan spasi secara horizontal dan vertikal / jarak di antara elemen*/
+}
+
+.sosial-media a{
+    text-decoration: none;/*untuk menghapus garis bawah Link media sosial */
+    color: rgb(2, 1, 1);/*Untuk mengatur warna teks link media sosial*/
+    transition: all 0.5s ease-in-out; /* Untuk menambahkan transisi dan mengganti kursor saat tersentuh / hover */
+}
+
+
+
+hr{
+    border-color: rgb(0, 0, 0);/*untuk mengatur warna garis pinggir hr*/
+    background-color: #000000;/*Untuk mengatur Warna hr*/
+
+    height: 3px;/* mengatur tinggi dari garis */
+}
+
+
+.hero{
+    display: flex;/* Untuk menampilkan content secara fleksibel*/
+    height: 70vh;/*Untuk mengatur tinggi dari hero dan vh yaitu ukuran element berdasarkan tinggi layar*/
+    flex-direction: column;/*Untuk mengatur elemen di dalamnya agar disusun secara vertikal*/
+    justify-content: center;/*Untuk mengatur agar elemen di dalamya berada di tengah secara vertikal*/
+    align-items: center;/*untuk mengatur elemen-elemen didalam baris tersebut akan ditengahkan secara vertikal (center)*/
+}
+
+.avatar{
+    width: 150px;/*Untuk mengatur lebar foto*/
+    height: 150px;/*Untuk mengatur tinggi foto*/
+    border-radius: 50%;/*untuk membulatkan sudut tepi*/
+    object-fit: cover;/*untuk mengisi ruang dengan menggunakan dimensi terkecil gambar dan memangkasnya agar sesuai dengan dimensi tersebut*/
+    margin-bottom: 16px;/*Untuk mengatur jarak di bagian bawah elemen*/
+}
+
+.heading{
+    margin-top: 1rem;/*Untuk mengatur jarak di bagian atas heading*/
+    font-size: 38px;/*Untuk mengatur ukuran teks heading*/
+    line-height: 40px;/* untuk mengatur jarak antar baris dalam teks heading*/
+    text-align: center;/*meratakan text ke tengah*/
+    background: linear-gradient(to right, #000000, #ffffff);/*Untuk mengatur warna teks menjadi gradasi dari warna hitam ke putih*/
+    -webkit-background-clip: text;/*Untuk mengubah warna background menjadi hanya di teks*/
+    -webkit-text-fill-color: transparent;/* Untuk membuat teks transparan agar gradasi terlihat*/
+    margin-bottom: 2rem;/*Untuk mengatur jarak di bagian bawah elemen*/
+}
+
+.download-button{
+    text-decoration: none;/*untuk menghapus garis bawah teks pada tombol*/
+    background-color:#a1d6e2;/*Untuk mengatur warna pada tombol*/
+    border: solid #ffffff;/*untuk mengatur warna garis*/
+    color: rgb(0, 0, 0);/*Untuk mengatur warna teks pada tombol*/
+    padding: 1rem 2rem;/*Memberi ruang di dalam tombol (atas-bawah: 1rem, kiri-kanan: 2rem)*/
+    border-radius: 12px;/*Untuk membulatkan sudut tepi*/
+    transition: all 0.3s easy-in-out;/*Untuk menambahkan transisi dan mengganti kursor saat tersentuh*/
+}
+
+.download-button:hover{
+    background-color: #ffffff;/*Untuk mengatur warna tombol saat tersentuh/hover*/
+    border: solid rgb(255, 255, 255);/*Untuk mengatur warna garis pada tombol saat tersentuh/hover*/
+    color: black;/*Untuk mengatur warna teks pada tombol*/
+}
+
