@@ -68,7 +68,7 @@ hr{
     margin-bottom: 2rem;/*Untuk mengatur jarak di bagian bawah elemen*/
 }
 
-.download-button{
+.btn{
     text-decoration: none;/*untuk menghapus garis bawah teks pada tombol*/
     background-color:#a1d6e2;/*Untuk mengatur warna pada tombol*/
     border: solid #ffffff;/*untuk mengatur warna garis*/
@@ -78,9 +78,210 @@ hr{
     transition: all 0.3s easy-in-out;/*Untuk menambahkan transisi dan mengganti kursor saat tersentuh*/
 }
 
-.download-button:hover{
+.btn:hover{
     background-color: #ffffff;/*Untuk mengatur warna tombol saat tersentuh/hover*/
     border: solid rgb(255, 255, 255);/*Untuk mengatur warna garis pada tombol saat tersentuh/hover*/
     color: black;/*Untuk mengatur warna teks pada tombol*/
 }
 
+.client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 5rem;
+    background-color: #a1d6e2;
+    background-origin: 1px solid white;
+    gap: 40px;
+}
+
+.client-list .client-logo{
+    width: 140px;
+    height: 90px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.client-list .client-logo:hover{
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+.alfa{
+    color: #ffffff;
+}
+
+h3{
+    align-items: center;
+    text-align: center;
+}
+.container {
+    display: flex;
+    grid-template-columns: repeat(5, 1fr); /* 3 kolom dengan ukuran yang sama */
+    gap: 100px; /* Jarak antar-box */
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: #fff;
+    border-radius: 10px;/*buat sisi kotakan ngga kotak*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;/*buat lebar kotak*/
+    height: 450px;/*buat tinggi kotak*/
+    text-align: center;/*agar teksnya di tengah*/
+    gap: 300px;/*jarak antara kotak*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {/*animasi saat kotak di klik*/
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.card img {/*mengatur gambar pada kotak*/
+    width: 100%;/*mengatur lebar gambar*/
+    height: 200px;/*mengatur tinggi gambar*/
+}
+
+.card-content {/*mengatur teks yang ada di kotak*/
+    padding: 20px;/*memberikan jarak antara teks dan kotak*/
+}
+
+.card-title {/*mengatur judul yang ada di kotak*/
+    font-size: 1.5em;/*ukuran font*/
+    margin-bottom: 10px;/*jarak bawah antara judul dan teks*/
+    color: #333;/*warna teks judul*/
+}
+
+.card-text {/*mengatur teks yang ada di kotak*/
+    font-size: 1em;/*ukuran font*/
+    color: #777;/*warna teks */
+    margin-bottom: 20px;/*jarak bawah antara teks dengan kotak*/
+}
+
+.my-skill {/*mengatur bagian skill*/
+    display: flex;
+    justify-content: center;/*agar skillnya di tengah*/
+    align-items: center;/* agar item yang ada di dalam nya di tengah */
+    padding: 2rem 5rem;/* jarak antara skill dan kotak atas bawah 2 rem dan kanan kiri 5 rem */ /*1 rem = 16px */
+    background-color: #a1d6e2;/*warna latar belakang kotakan skill */
+    margin: 50px;/*jarak antara skill dan kotak atas bawah */
+    gap: 40px;/*jarak antara skill */
+    height: 100px;/*tinggi kotakan skill */
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);/*untuk memberikan efek bayangan pada kotak skill */
+}
+.skill-list .skill-logo {/*mengatur gambar pada kotakan skill*/
+    width: 140px;/*lebar gambar*/
+    height: 90px;/*tinggi gambar*/
+    object-fit : contain;/*Memastikan gambar tetap sepenuhnya terlihat dalam elemen tanpa dipotong, meskipun aspek rasio berbeda.*/
+    filter: grayscale(100%);/*mengubah warna gambar  menjadi hitam putih */
+    transition: all 0.3s ease-in-out;/*Mengatur animasi transisi*/
+}
+.skill-list .skill-logo:hover {/*mengatur gambar pada kotakan skill saat di klik */
+    cursor: pointer;/*mengubah tanda kursor menjadi tangan */
+    filter: grayscale(0%);/*mengubah warna gambar saat di klik menjadi warna aslinya */
+}
+
+.contact{
+    padding: 3rem 5rem;
+    border: #ffffff;
+}
+
+.contact .h2{
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem ;
+}
+
+input , textarea{
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+}
+
+.contact-form .btn{
+    margin-top: 8px;
+}
+
+
+
+/* Footer Styling */
+.footer {
+    background-color: #b9e8f3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sosial-media {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sosial-media h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #fdfffe;
+}
+
+.social-icon i {
+    font-size: 25px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: #333;
+}
+
+.social-icon.instagram {
+    background-color: #e4405f;
+    height: 50px;
+    width: 50px;
+}
+
+.social-icon.whatsapp {
+    background-color: #25D366;
+    height: 50px;
+    width: 50px;
+}
+
+  
+  /* Copyright */
+  .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #000000;
+  }
+  
+
+.alamat{
+    background-color: black;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+}
