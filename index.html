@@ -1,32 +1,115 @@
-<!DOCTYPE html> <!--untuk Memberitahu browser bahwa ini adalah dokumen HTML versi terbaru -->
-<html lang="en"><!-- Membuka dokumen HTML dan memberi tahu browser bahwa bahasa yang digunakan adalah bahasa Inggris (en = English) -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title><!--Untuk Judul Pada Web Browser-->
-    <link rel="stylesheet" type="text/css" href="style.css"><!--Untuk Menghubungkan File CSS dengan HTML ( nama file CSS harus sama dengan yang di ketik di kanan href )-->
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav class="navbar"><!--Untuk membuat navbar dan  class untuk memudahkan saat mengatur css-->
-            <h6 class="email">alfadhanifahrezan@gmail.com</h6><!--untuk menampilakn teks dengan ukuran kecil berisi alamat email-->
+        <nav class="navbar">
+            <h6 class="email">alfadhanifahrezan@gmail.com</h6>
             <div class="sosial-media">
-                <a href="" target="_blank"></i> Linkedin</a><!-- untuk membuat tautan / link ke halaman linkedin, target blank untuk membuka tab baru -->
-                <a href="https://www.instagram.com/dannn_alfa284/" target="_blank"> Instagram</a><!-- untuk membuat tautan / link ke halaman Instagram , target blank untuk membuka tab baru -->
-                <a href="https://github.com/alfaDHANI284" target="_blank"> Github</a><!-- untuk membuat tautan / link ke halaman Github, target blank untuk membuka tab baru -->
+             <a href="https://www.linkedin.com/in/d-alfa-1892b3349/" target="_blank"> <i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="https://www.instagram.com/dhani_alfa284/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://github.com/alfaDHANI284" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
             </div>
         </nav>
     </header>
 
-    <hr><!--Untuk Menampilkan garis horizontal-->
+    <hr>
 
     <section class="hero">
-        <img src="alfa-02.png" alt="foto alfa ganteng" class="avatar"><!--Untuk menampilakan gambar, dan class untuk memudahkan saat mengatur CSS-->
-        <p>Hai, Nama Saya Alfa Dhani Fahrezan</p><!--Untuk memunculkan paragraf (Hai, Nama Saya Alfa Dhani Fahrezan)-->
-        <h1 class="heading">I'm a Student</h1><!--Menampilkan teks besar dengan teks "I'm a Student" dan class “heading” untuk memudahkahkan saat mengatur css-->
-        <a href="alfa cv.pdf" download="alfa cv.pdf" class="download-button" onclick="return confirmDownload()">Download CV</a><!--Untuk membuat tombol yang berfungsi untuk mendownload CV Alfa -->
+        <img src="/images/alfa-02.png" alt="foto alfa ganteng" class="avatar">
+        <p>Hai, Nama Saya Alfa Dhani Fahrezan</p>
+        <h1 class="heading">I'm a Student</h1>
+        <a href="/pdf/alfa cv.pdf" download="/pdf/alfa cv.pdf" class="btn" onclick="return confirmDownload()">Download CV</a>
     </section>
 
-    <script src="script.js"></script><!--Untuk menghubungkan file JS dengan HTML (nama file js harus sama dengan yang di ketik di kanan src )-->
+    <section class="client">
+        <h2 class="alfa">Client</h2>
+        <div class="client-list">
+            <img src="images/clients/apple.png" class="client-logo">
+            <img src="images/clients/nasa.png" class="client-logo">
+            <img src="images/clients/tokopedia.png" class="client-logo">
+            <img src="images/clients/tiktok.png" class="client-logo">
+            <img src="images/clients/microsoft.png" class="client-logo">
+        </div>
+    </section>
+
+
+
+    <h3>Latest Projects</h3>
+    <div class="container">
+      <div class="card">
+        <img src="images/projects/aksara-jawa.png" alt="Card1 Image" class="project-img" id="projectImage1">
+        <div class="card-content">
+          <h2 class="card-title">Project 1</h2>
+          <p class="card-text">Membuat web aksara jawa HTML CSS</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="images/projects/arts.png" alt="Card2 Image" class="project-img" id="projectImage2">
+        <div class="card-content">
+          <h2 class="card-title">Project 1</h2>
+          <p class="card-text">Membuat website jualan makanan</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <img src="images/projects/figma.png" alt="Card3 Image" class="project-img" id="projectImage3">
+        <div class="card-content">
+          <h2 class="card-title">Project 3</h2>
+          <p class="card-text">Membuat desain website penjualan fast food di figma</p>
+        </div>
+      </div>
+    </div>
+  
+    <section class="my-skill">
+      <h2>My Skill</h2>
+      <br>
+      <div class="skill-list">
+        <img src="images/my-skills/html.png" alt="logo html" class="skill-logo" id="htmlSkill">
+        <img src="images/my-skills/css.png" alt="logo css" class="skill-logo" id="cssSkill">
+        <img src="images/my-skills/js.png" alt="logo js" class="skill-logo" id="jsSkill">
+        <img src="images/my-skills/php.png" alt="logo php" class="skill-logo" id="phpSkill">
+        <img src="images/my-skills/sql.png" alt="logo sql" class="skill-logo" id="sqlSkill">
+      </div>
+    </section>
+  
+
+    <section class="contact">
+      <h2>Hubungi Saya</h2>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" placeholder="masukan nama kamu" name="nama"> 
+        <input type="email" placeholder=" masukan email kamu" name="email">
+        <textarea placeholder="Berikan masukan kepada website saya " name="pesan"></textarea>
+        <button type="submit" class="btn">Kirim pesan</button>
+
+      </form>
+    </section>
+
+    <footer class="footer">
+      <section class="sosial-media">
+        <h2>Ikuti Saya di Media Sosial</h2>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/dhani_alfa284/" target="_blank" class="social-icon instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/+6285161228041" target="_blank" class="social-icon whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.2706673289695!2d109.24638807476215!3d-7.435272992575536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655e9d1768e4d1%3A0x959269c10818fa0c!2sSMK%20Telkom%20Purwokerto!5e0!3m2!1sen!2sid!4v1738627700358!5m2!1sen!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="alamat"></iframe>
+    
+      <p class="copyright">© 2025 COPYRIGHT BY ALFA</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
